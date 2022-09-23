@@ -1,0 +1,14 @@
+def flatten(z):
+    
+    for i in z:
+        if isinstance(i,list): # It runs until the list remains.
+            flatten(i)
+        else:
+            empty_list.append(i)
+    
+    
+
+z= [[1,'a',['cat'],2],[[[3]],'dog'],4,5] #The list given to us.
+empty_list = [] 
+flatten(z)
+print(empty_list)
